@@ -10,3 +10,4 @@ RUN apt-get update && apt-get install -y \
   && docker-php-ext-install exif \
   && docker-php-ext-install zip
 COPY php.ini /usr/local/etc/php/
+COPY www.conf /usr/local/etc/php-fpm.d/
